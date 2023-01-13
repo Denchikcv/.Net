@@ -1,0 +1,2 @@
+obj\Debug\net7.0\Protos/Colleges.cs \
+obj\Debug\net7.0\Protos/CollegesGrpc.cs: Protos/colleges.proto

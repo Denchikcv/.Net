@@ -1,0 +1,20 @@
+syntax = "proto3";
+
+option csharp_namespace = "CollegeService";
+
+service GrpcCollege {
+    rpc GetAllColleges (GetAllRequest) returns (CollegeResponse);
+}
+
+message GetAllRequest {}
+
+message GrpcCollegeModel{
+    int32 collegeId = 1;
+    string name = 2;
+    string publisher = 3;
+}
+
+message CollegeResponse {
+    repeated GrpcCollegeModel college = 1;
+}
+
